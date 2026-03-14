@@ -1,108 +1,290 @@
-body{
+/* ===============================
+GENERAL PAGE STYLE
+=============================== */
 
+body{
 margin:0;
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 background:#2b0015;
 color:white;
-
 }
+
+
+/* ===============================
+NAVBAR
+=============================== */
 
 .navbar{
-
 display:flex;
 justify-content:space-between;
+align-items:center;
 padding:20px;
 background:#1b000d;
-
 }
 
-.logo{
-
-color:#d4a24c;
-font-size:22px;
-font-weight:bold;
-
+.logo img{
+height:45px;
 }
 
 .nav-links a{
-
 color:white;
-margin-left:20px;
+margin-left:25px;
 text-decoration:none;
-
+font-size:16px;
+transition:0.3s;
 }
 
+.nav-links a:hover{
+color:#d4a24c;
+}
+
+
+/* ===============================
+HERO SECTION
+=============================== */
+
 .hero{
-
+background:linear-gradient(rgba(43,0,21,0.85),rgba(43,0,21,0.95)), url("dealership.jpg");
+background-size:cover;
+background-position:center;
 text-align:center;
-padding:120px 20px;
-
+padding:160px 20px;
 }
 
 .hero h1{
-
 color:#d4a24c;
 font-size:50px;
+margin-bottom:10px;
+}
 
+.hero p{
+font-size:18px;
+margin-bottom:25px;
 }
 
 .cta{
-
 background:#d4a24c;
 color:black;
-padding:12px 25px;
+padding:14px 28px;
 text-decoration:none;
 border-radius:6px;
-
+font-weight:bold;
+transition:0.3s;
 }
 
-.why{
+.cta:hover{
+background:#f2c068;
+}
 
-padding:60px 20px;
+
+/* ===============================
+ABOUT SECTION
+=============================== */
+
+.about{
 text-align:center;
+padding:70px 20px;
+max-width:800px;
+margin:auto;
+line-height:1.6;
+}
 
+
+/* ===============================
+WHY CHOOSE US
+=============================== */
+
+.why{
+padding:70px 20px;
+text-align:center;
 }
 
 .features{
-
 display:flex;
 justify-content:center;
 gap:20px;
-
+flex-wrap:wrap;
 }
 
 .feature{
-
 background:#3b001c;
-padding:20px;
+padding:20px 30px;
 border-radius:8px;
-
+transition:0.3s;
 }
 
+.feature:hover{
+transform:translateY(-5px);
+}
+
+
+/* ===============================
+SERVICES / OFFERINGS
+=============================== */
+
 .offerings{
-
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
-
 }
 
 .offerings ul{
-
 list-style:none;
 padding:0;
-
 }
 
 .offerings li{
-
 margin:10px 0;
-
+font-size:17px;
 }
 
-footer{
 
+/* ===============================
+FEATURED CARS
+=============================== */
+
+.featured{
+padding:70px 20px;
+text-align:center;
+}
+
+.cars{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.car{
+background:#3b001c;
+padding:20px;
+border-radius:10px;
+width:260px;
+text-align:center;
+transition:0.3s;
+}
+
+.car:hover{
+transform:translateY(-6px);
+}
+
+.car img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+
+/* ===============================
+REVIEWS
+=============================== */
+
+.reviews{
+padding:70px 20px;
+text-align:center;
+}
+
+.review{
+background:#3b001c;
+padding:20px;
+margin:20px auto;
+max-width:600px;
+border-radius:10px;
+}
+
+
+/* ===============================
+LOCATION / MAP
+=============================== */
+
+.location{
+text-align:center;
+padding:70px 20px;
+}
+
+.location iframe{
+margin-top:20px;
+border-radius:10px;
+}
+
+
+/* ===============================
+FOOTER
+=============================== */
+
+footer{
 text-align:center;
 padding:20px;
 background:#1b000d;
+margin-top:40px;
+}
+
+
+/* ===============================
+WHATSAPP BUTTON
+=============================== */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+/* ===============================
+SCROLL ANIMATION
+=============================== */
+
+.animate{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+
+/* ===============================
+MOBILE RESPONSIVE
+=============================== */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.nav-links{
+margin-top:10px;
+}
+
+.nav-links a{
+display:block;
+margin:8px 0;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.features{
+flex-direction:column;
+align-items:center;
+}
+
+.cars{
+flex-direction:column;
+align-items:center;
+}
 
 }
