@@ -457,44 +457,154 @@ grid-template-columns:1fr;
 }
 
 }
-/* ============================= */
-/* INVENTORY PAGE STYLE */
-/* ============================= */
+/* ================================= */
+/* PREMIUM INVENTORY SECTION */
+/* ================================= */
 
 .inventory{
-display:flex;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
-justify-content:center;
 max-width:1100px;
-margin:auto;
-padding:40px 20px;
+margin:40px auto;
+padding:0 20px;
 }
 
 .car-card{
 background:#3b001c;
-padding:25px;
-border-radius:10px;
-width:260px;
-transition:.3s;
-box-shadow:0 6px 20px rgba(0,0,0,.3);
+border-radius:12px;
+overflow:hidden;
+position:relative;
+transition:.4s ease;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
 }
 
 .car-card:hover{
-transform:translateY(-8px);
-background:#4a0024;
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 15px 35px rgba(0,0,0,.5);
 }
 
-.car-card h3{
+/* CAR IMAGE */
+
+.car-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* CARD CONTENT */
+
+.car-info{
+padding:18px;
+text-align:center;
+}
+
+.car-info h3{
 color:#d4a24c;
-margin-bottom:10px;
+margin-bottom:6px;
 font-size:20px;
 }
 
-.car-card p{
+.price{
+font-size:18px;
+color:#ffffff;
+margin-bottom:12px;
+font-weight:bold;
+}
+
+/* BADGES */
+
+.badge{
+position:absolute;
+top:12px;
+left:12px;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+}
+
+.available{
+background:#25D366;
+color:white;
+}
+
+.sold{
+background:#e63946;
+color:white;
+}
+
+/* FEATURED VEHICLES */
+
+.featured{
+border:2px solid #d4a24c;
+}
+
+/* FILTER BUTTONS */
+
+.brand-filters{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
+}
+
+.brand-filters button{
+background:#d4a24c;
+border:none;
+padding:10px 16px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.brand-filters button:hover{
+background:#f2c068;
+}
+
+/* CTA BUTTON */
+
+.car-card .cta{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:10px 16px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
 font-size:14px;
-margin-bottom:15px;
-color:#f5f5f5;
+transition:.3s;
+}
+
+.car-card .cta:hover{
+background:#1ebe5d;
+}
+
+/* ANIMATION */
+
+.car-card{
+animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.inventory{
+grid-template-columns:1fr;
+}
+
+.car-card img{
+height:220px;
+}
+
 }
 
 /* WhatsApp Button Inside Cards */
