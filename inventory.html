@@ -1,98 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Inventory - Sugarwheel Automotive</title>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-
-<nav class="navbar">
-
-<div class="logo">Sugarwheel Automotive</div>
-
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="inventory.html" class="active">Inventory</a>
-<a href="services.html">Services</a>
-<a href="reviews.html">Reviews</a>
-<a href="contact.html">Contact</a>
-</div>
-
-</nav>
-
 <section class="inventory-hero">
 <h1>Our Vehicle Inventory</h1>
 <p>Premium Cars Across All Major Brands</p>
+
+<!-- FILTER BUTTONS -->
+<div class="brand-filters">
+<button onclick="filterCars('all')">All</button>
+<button onclick="filterCars('Toyota')">Toyota</button>
+<button onclick="filterCars('Mercedes')">Mercedes</button>
+<button onclick="filterCars('BMW')">BMW</button>
+<button onclick="filterCars('Lexus')">Lexus</button>
+<button onclick="filterCars('Luxury')">Luxury</button>
+</div>
 </section>
 
-<section class="inventory">
 
-<div class="car-card">
-<h3>Toyota</h3>
-<p>Reliable & Affordable Vehicles</p>
-<a class="cta" href="https://wa.me/2348110191793?text=I%20am%20interested%20in%20Toyota%20cars">
-Enquire on WhatsApp
-</a>
+<!-- FEATURED SECTION -->
+<section>
+<h2>⭐ Featured Cars</h2>
+
+<div class="inventory">
+
+<div class="car-card featured" data-brand="Toyota">
+<span class="badge available">Available</span>
+<img src="images/toyota-camry.jpg" alt="Toyota Camry">
+<h3>Toyota Camry</h3>
+<p class="price">₦18,500,000</p>
+<a class="cta" href="#">Enquire on WhatsApp</a>
 </div>
 
-<div class="car-card">
-<h3>Mercedes-Benz</h3>
-<p>Luxury & Executive Models</p>
-<a class="cta" href="https://wa.me/2348110191793?text=I%20am%20interested%20in%20Mercedes%20Benz">
-Enquire on WhatsApp
-</a>
+<div class="car-card featured" data-brand="Mercedes Luxury">
+<span class="badge available">Available</span>
+<img src="images/mercedes.jpg" alt="Mercedes Benz">
+<h3>Mercedes Benz S-Class</h3>
+<p class="price">₦75,000,000</p>
+<a class="cta" href="#">Enquire on WhatsApp</a>
 </div>
 
-<div class="car-card">
-<h3>BMW</h3>
-<p>Sport & Performance Cars</p>
-<a class="cta" href="https://wa.me/2348110191793?text=I%20am%20interested%20in%20BMW">
-Enquire on WhatsApp
-</a>
 </div>
-
-<div class="car-card">
-<h3>Lexus</h3>
-<p>Premium Luxury SUVs</p>
-<a class="cta" href="https://wa.me/2348110191793?text=I%20am%20interested%20in%20Lexus">
-Enquire on WhatsApp
-</a>
-</div>
-
-<div class="car-card">
-<h3>Range Rover</h3>
-<p>Luxury SUV Performance</p>
-<a class="cta" href="https://wa.me/2348110191793?text=I%20am%20interested%20in%20Range%20Rover">
-Enquire on WhatsApp
-</a>
-</div>
-
-<div class="car-card">
-<h3>Porsche</h3>
-<p>High Performance Vehicles</p>
-<a class="cta" href="https://wa.me/2348110191793?text=I%20am%20interested%20in%20Porsche">
-Enquire on WhatsApp
-</a>
-</div>
-
-<div class="car-card">
-<h3>Ferrari</h3>
-<p>Supercar Collection</p>
-<a class="cta" href="https://wa.me/2348110191793?text=I%20am%20interested%20in%20Ferrari">
-Enquire on WhatsApp
-</a>
-</div>
-
-<div class="car-card">
-<h3>Rolls Royce</h3>
-<p>Ultra Luxury Vehicles</p>
-<a class="cta" href="https://wa.me/2348110191793?text=I%20am%20interested%20in%20Rolls%20Royce">
-Enquire on WhatsApp
-</a>
-</div>
-
 </section>
-</body>
-</html>
+
+
+<!-- ALL CARS -->
+<section>
+<h2>All Vehicles</h2>
+
+<div class="inventory">
+
+<div class="car-card" data-brand="BMW">
+<span class="badge sold">Sold</span>
+<img src="images/bmw.jpg" alt="BMW">
+<h3>BMW X6</h3>
+<p class="price">₦42,000,000</p>
+<a class="cta" href="#">Enquire on WhatsApp</a>
+</div>
+
+<div class="car-card" data-brand="Luxury">
+<span class="badge available">Available</span>
+<img src="images/rolls.jpg" alt="Rolls Royce">
+<h3>Rolls Royce Ghost</h3>
+<p class="price">₦320,000,000</p>
+<a class="cta" href="#">Enquire on WhatsApp</a>
+</div>
+
+</div>
+</section>
