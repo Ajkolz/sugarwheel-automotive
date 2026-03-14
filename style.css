@@ -329,8 +329,10 @@ right:20px;
 }
 
 }
-.nav-links a{
+
+  .nav-links a{
 margin:10px 0;
+display:block;
 }
 
 .menu-toggle{
