@@ -23,12 +23,44 @@
 </nav>
 
 <section class="inventory-hero">
+  <div class="container">
 <h1>Our Vehicle Inventory</h1>
 <p>Premium Cars Across All Major Brands</p>
-</section>
+<div class="brand-filters">
+<button onclick="filterCars('all')">All</button>
+<button onclick="filterCars('Toyota')">Toyota</button>
+<button onclick="filterCars('Mercedes')">Mercedes</button>
+<button onclick="filterCars('BMW')">BMW</button>
+<button onclick="filterCars('Lexus')">Lexus</button>
+<button onclick="filterCars('Luxury')">Luxury</button>
+</div>
 
+</div>
+</section>
+  
 <section class="inventory">
 
+  <section>
+<div class="container">
+
+<h2>⭐ Featured Cars</h2>
+
+<div class="car-card featured" data-brand="Toyota">
+<span class="badge available">Available</span>
+<img src="images/toyota-camry.jpg">
+<h3>Toyota Camry</h3>
+<p class="price">₦18,500,000</p>
+<a class="cta" href="#">Enquire on WhatsApp</a>
+</div>
+
+<div class="car-card featured" data-brand="Mercedes Luxury">
+<span class="badge available">Available</span>
+<img src="images/mercedes.jpg">
+<h3>Mercedes S-Class</h3>
+<p class="price">₦75,000,000</p>
+<a class="cta" href="#">Enquire on WhatsApp</a>
+</div>
+  <div class="inventory">
 <div class="car-card">
 <h3>Toyota</h3>
 <p>Reliable & Affordable Vehicles</p>
