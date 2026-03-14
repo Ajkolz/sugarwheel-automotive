@@ -132,6 +132,43 @@ background:#f2c068;
 }
 
 
+.call-btn{
+
+position:fixed;
+bottom:90px;
+right:25px;
+
+background:#d4a24c;
+color:black;
+
+padding:14px 20px;
+border-radius:30px;
+
+font-weight:bold;
+text-decoration:none;
+
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+
+.call-btn i{
+margin-right:8px;
+}
+
+.location p{
+
+font-size:17px;
+margin:10px 0;
+
+}
+
+.location i{
+
+color:#d4a24c;
+margin-right:10px;
+
+}
+
 /* FEATURES */
 
 .features{
