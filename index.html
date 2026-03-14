@@ -4,35 +4,42 @@
 
 <title>Sugarwheel Automotive</title>
 
-<link rel="stylesheet" href="style.css">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav class="navbar">
+<div class="nav-container">
 
 <div class="logo">
-<img src="logo.png" alt="Sugarwheel Automotive Logo">
+<img src="logo.png" alt="Sugarwheel Automotive">
 </div>
 
-<div class="nav-links">
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
+<div class="nav-links" id="navLinks">
 <a href="index.html">Home</a>
 <a href="inventory.html">Inventory</a>
 <a href="services.html">Services</a>
 <a href="reviews.html">Reviews</a>
 <a href="contact.html">Contact</a>
-
 </div>
 
+</div>
 </nav>
 
-<!-- HERO SECTION -->
+
+<!-- HERO -->
 
 <section class="hero">
+
+<div class="hero-content">
 
 <h1>Sugarwheel Automotive</h1>
 
@@ -40,74 +47,66 @@
 
 <a class="cta" href="inventory.html">View Available Cars</a>
 
-</section>
-
-<!-- ABOUT -->
-
-<section class="about animate">
-
-<h2>About Sugarwheel Automotive</h2>
-
-<p>
-
-At Sugarwheel Automotive we specialize in sourcing and selling
-clean verified vehicles that give buyers complete peace of mind.
-
-Every vehicle we sell goes through verification to ensure
-customers avoid problematic cars.
-
-Our goal is simple — provide reliable vehicles with a seamless buying experience.
-
-</p>
+</div>
 
 </section>
 
-<!-- WHY CHOOSE US -->
 
-<section class="why animate">
+<!-- WHY CHOOSE -->
 
-<h2>Why Choose Us</h2>
+<section class="animate">
+
+<h2>Why Choose Sugarwheel Automotive</h2>
 
 <div class="features">
 
 <div class="feature">
-✔ Verified Clean Vehicles
+✔ Sourcing and Selling Clean Verified Vehicles
 </div>
 
 <div class="feature">
-✔ Peace Of Mind Purchase
+✔ Every Vehicle Goes Through Verification
 </div>
 
 <div class="feature">
-✔ No Problematic Cars
+✔ Seamless & Reliable Car Buying Experience
 </div>
 
 </div>
 
 </section>
+
 
 <!-- SERVICES -->
 
-<section class="offerings animate">
+<section class="animate">
 
-<h2>What We Offer</h2>
+<h2>Our Services</h2>
 
-<ul>
+<div class="features">
 
-<li>Car Sales</li>
-<li>Car Finance</li>
-<li>Aftermarket Assistance</li>
-<li>Customization & Upgrading</li>
-<li>Car Maintenance</li>
-<li>Car Preorder</li>
+<div class="feature">🚗 Car Sales</div>
 
-</ul>
+<div class="feature">💰 Car Finance</div>
+
+<div class="feature">🧽 Aftermarket Assistance</div>
+
+<div class="feature">🔧 Customization & Upgrading</div>
+
+<div class="feature">📈 Car Maintenance</div>
+
+<div class="feature">🚙 Luxury Car Sourcing & Hire</div>
+
+<div class="feature">📦 Car Preorder</div>
+
+</div>
 
 </section>
 
+
 <!-- FEATURED CARS -->
 
-<section class="featured animate">
+<section class="animate">
 
 <h2>Featured Vehicles</h2>
 
@@ -137,9 +136,10 @@ Our goal is simple — provide reliable vehicles with a seamless buying experien
 
 </section>
 
+
 <!-- REVIEWS -->
 
-<section class="reviews animate">
+<section class="animate">
 
 <h2>Customer Reviews</h2>
 
@@ -163,33 +163,35 @@ Our goal is simple — provide reliable vehicles with a seamless buying experien
 
 </section>
 
+
 <!-- LOCATION -->
 
 <section class="location animate">
 
 <h2>Visit Our Showroom</h2>
 
-  <iframe 
-                src="https://maps.google.com/maps?q=Ogudu%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                width="100%" 
-                height="250" 
-                style="border:0; border-radius:10px; margin-top:20px;" 
-                allowfullscreen 
-                loading="lazy">
-            </iframe>
-  
- <p>📍 79 Alhaji Amoo, Ogudu, Lagos, Nigeria</p>
-            <p>📞 +234 811 019 1793</p>
-            <p>📧 sugarwheelautos@gmail.com</p>
-            <a href="#">Schedule a Call</a>
-  
+<iframe
+src="https://maps.google.com/maps?q=Ogudu%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="250"
+style="border:0;">
+</iframe>
+
+<p>📍 79 Alhaji Amoo, Ogudu, Lagos, Nigeria</p>
+
+<p>📞 +234 811 019 1793</p>
+
+<p>📧 sugarwheelautos@gmail.com</p>
+
 </section>
+
 
 <footer>
 
 <p>© 2026 Sugarwheel Automotive Dealership. All Rights Reserved.</p>
 
 </footer>
+
 
 <!-- WHATSAPP BUTTON -->
 
@@ -199,9 +201,13 @@ Chat on WhatsApp
 
 </a>
 
-<!-- SCROLL ANIMATION SCRIPT -->
 
 <script>
+
+function toggleMenu(){
+const nav = document.getElementById("navLinks");
+nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
 
 const observer = new IntersectionObserver(entries => {
 
@@ -226,5 +232,4 @@ observer.observe(el);
 </script>
 
 </body>
-
 </html>
