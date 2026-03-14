@@ -1,3 +1,5 @@
+<html>
+<body>
 <section class="inventory-hero">
 <h1>Our Vehicle Inventory</h1>
 <p>Premium Cars Across All Major Brands</p>
@@ -64,3 +66,28 @@
 
 </div>
 </section>
+
+<script>
+function filterCars(brand){
+
+let cards = document.querySelectorAll(".car-card");
+
+cards.forEach(card =>{
+
+if(brand === "all"){
+card.style.display = "block";
+}else{
+if(card.dataset.brand.includes(brand)){
+card.style.display = "block";
+}else{
+card.style.display = "none";
+}
+}
+
+});
+
+}
+</script>
+</body>
+</html>
+
