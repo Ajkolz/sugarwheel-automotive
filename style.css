@@ -646,3 +646,33 @@ height:200px;
 }
 
 }
+/* INVENTORY CENTRAL ALIGNMENT */
+
+.inventory{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+max-width:1100px;
+
+margin:40px auto;
+
+padding:0 20px;
+
+}
+.brand-filters{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-top:20px;
+
+}
