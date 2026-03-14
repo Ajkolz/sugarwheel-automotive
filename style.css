@@ -457,3 +457,77 @@ grid-template-columns:1fr;
 }
 
 }
+/* ============================= */
+/* INVENTORY PAGE STYLE */
+/* ============================= */
+
+.inventory{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.car-card{
+background:#3b001c;
+padding:25px;
+border-radius:10px;
+width:260px;
+transition:.3s;
+box-shadow:0 6px 20px rgba(0,0,0,.3);
+}
+
+.car-card:hover{
+transform:translateY(-8px);
+background:#4a0024;
+}
+
+.car-card h3{
+color:#d4a24c;
+margin-bottom:10px;
+font-size:20px;
+}
+
+.car-card p{
+font-size:14px;
+margin-bottom:15px;
+color:#f5f5f5;
+}
+
+/* WhatsApp Button Inside Cards */
+
+.car-card .cta{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:10px 16px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px;
+transition:.3s;
+}
+
+.car-card .cta:hover{
+background:#1ebe5d;
+}
+
+/* Inventory Hero Adjustment */
+
+.inventory-hero{
+padding:120px 20px 40px 20px;
+}
+
+.inventory-hero h1{
+color:#d4a24c;
+font-size:42px;
+margin-bottom:10px;
+}
+
+.inventory-hero p{
+font-size:18px;
+color:white;
+}
